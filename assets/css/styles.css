@@ -1,0 +1,36 @@
+header {
+ display:flex;
+ justify-content:center;
+  }
+  
+  header h1 {
+  
+  }
+  
+  img {
+    display: flex;
+    justify-content: left;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-containers {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 3px;
+  }
+  
+  .left-side {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: center;
+  }
