@@ -20,4 +20,3 @@ themeSwitcher.addEventListener('click', function () {
 });
 
 const allBlogEntries =localStorage.getItem('entry');
-const javascriptBlogEntries = JSON.parse(allBlogEntries);

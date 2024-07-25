@@ -11,12 +11,16 @@ function renderEntry() {
     const entryDiv = document.createElement('div');
     const entryHeading = document.createElement('h2');
     // Create some elements for the username and the content
+    const entryUsername = document.createElement('section')
 
     entryHeading.textContent = entry.title;
     // Add the text for the username and content elements
+    entryUsername.textContent = entry.username;
+   
 
     entryDiv.append(entryHeading);
     // append the username and content elements to the entry div
+    entryDiv.append(entryUsername);
 
     blogContainer.append(entryDiv); // Appends the overall div (entryDiv) to our existing HTML
   }

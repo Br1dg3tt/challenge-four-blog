@@ -7,9 +7,9 @@
 
 /* Dark Mode */
 .dark {
-  background-color:#243447;
+  background-color:#10392c;
   height: 100vh;
-  color: #bebebe
+  color: #7a933b;
  
 }
 
@@ -23,8 +23,8 @@
 
 /* Light Mode */
 .light {
-  background-color: #f0ead6;
-  color: black;
+  background-color: #7a933b;
+  color: #10392c;
   height: 100vh;
 }
 
@@ -115,11 +115,11 @@ body {
 header {
  display:flex;
  justify-content:center;
- color:#10392c;
+ color:#260b42;
   }
   
   h2 {
-    color:#10392c;
+    color:#260b42;
   }
   
   img {
