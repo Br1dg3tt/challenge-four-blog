@@ -28,9 +28,19 @@ header {
   .left-side {
     display: flex;
     justify-content: center;
+    border-color:black;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .right-side {
     display: flex;
     justify-content: center;
+    border-color:black;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
