@@ -6,14 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/blog.css" />
 
   </head>
 
   <body>
 <header>
   <h1>My Personal Blog</h1>
+  <div class="container-dark">
+    <div class="row toggle">
+    <div class="col">
+      <p>DARK MODE</p>
+    </div>
+    <label class="switch col">
+      <input type="checkbox" id="theme-switcher">
+      <span class="slider round"></span>
+    </label>
+    <div class="col">
+      <p>LIGHT MODE</p>
+    </div>
+  </div> 
 </header>
-
+<hr />
+<section>
+  <h2>Blog Entries</h2>
+  <p id="blogEntries">PlaceHolder</p>
+</section>
+<script src="./assets/js/blog.js"></script>
+<script src="./assets/js/form.js"></script>
+<script src="./assets/js/logic.js"></script>
 <footer></footer>
   </body>
+
   </html>
