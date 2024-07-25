@@ -7,7 +7,7 @@
 
 /* Dark Mode */
 .dark {
-  background-color:#10392c;
+  background-color:#071a10;
   height: 100vh;
   color: #7a933b;
  
@@ -77,11 +77,11 @@
 }
 
 input:checked + .slider {
-  background-color: rgb(29, 128, 210);
+  background-color: #5d3588;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px rgb(29, 128, 210);
+  box-shadow: 0 0 1px #5d3588;
 }
 
 input:checked + .slider:before {
@@ -115,11 +115,11 @@ body {
 header {
  display:flex;
  justify-content:center;
- color:#260b42;
+ color:#5d3588;
   }
   
   h2 {
-    color:#260b42;
+    color:#5d3588;
   }
   
   img {
