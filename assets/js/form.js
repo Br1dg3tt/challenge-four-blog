@@ -11,6 +11,15 @@ function saveEntry() {
     confirm("Please enter a username!");
     return
   }
+  if (titleInput.value.trim() === "") {
+    confirm("Please enter a Title!");
+    return
+  }
+  if (contentInput.value.trim() === "") {
+    confirm("Please enter some content!");
+    return
+  }
+  
   const entry = {
     userName: userNameInput.value.trim(),
     title: titleInput.value.trim(),
