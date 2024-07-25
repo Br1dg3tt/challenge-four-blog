@@ -3,31 +3,38 @@ const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#content');
 
 
- 
-    function saveEntry () {
+
+function saveEntry() {
+  const previousStorage = JSON.parse(localStorage.getItem('entry')) || [];
+  // Write a conditional statement to handle if the user doesn't fill out one of the form inputs
+  if (userNameInput.value.trim() === "") {
+    confirm("Please enter a username!");
+    return
+  }
   const entry = {
     userName: userNameInput.value.trim(),
     title: titleInput.value.trim(),
     content: contentInput.value.trim(),
   };
- 
-  localStorage.setItem('entry', JSON.stringify(entry));
+  previousStorage.push(entry);
+
+  localStorage.setItem('entry', JSON.stringify(previousStorage));
 }
 
-function renderEntry () {
+// function renderEntry() {
 
-    const newEntry = JSON.parse(localStorage.getItem('entry'));
-}
-const submitForm =document.querySelector('#form');
+//   const newEntry = JSON.parse(localStorage.getItem('entry'));
+// }
+const submitForm = document.querySelector('#form');
 
 submitForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-    saveEntry ();
-    renderEntry();
-    window.location.href ='blog.html';
+  event.preventDefault();
+  saveEntry();
+  // renderEntry();
+  window.location.href = 'blog.html';
 });
 
-    function init () {
-        renderEntry;
-    }
-    init();
+// function init() {
+//   renderEntry;
+// }
+// init();

@@ -1,23 +1,26 @@
-// Access toggle switch HTML element
-const themeSwitcher = document.querySelector('#theme-switcher');
-const container = document.querySelector('.container');
+var blogContainer = document.querySelector('.blog-entry');
+function renderEntry() {
 
-// Set default mode to dark
-let mode = 'dark';
+  const newEntry = JSON.parse(localStorage.getItem('entry')); // array of objects 
+  // Loop through the entries and utilize create and append to create and append some html elements to the page
 
-// Listen for a click event on toggle switch
-themeSwitcher.addEventListener('click', function () {
-  // If mode is dark, apply light background
-  if (mode === 'dark') {
-    mode = 'light';
-    container.setAttribute('class', 'light');
+  for (let index = 0; index < newEntry.length; index++) {
+    // Create some html elements to display our content
+    const entry = newEntry[index];
+
+    const entryDiv = document.createElement('div');
+    const entryHeading = document.createElement('h2');
+    // Create some elements for the username and the content
+
+    entryHeading.textContent = entry.title;
+    // Add the text for the username and content elements
+
+    entryDiv.append(entryHeading);
+    // append the username and content elements to the entry div
+
+    blogContainer.append(entryDiv); // Appends the overall div (entryDiv) to our existing HTML
   }
-  // If mode is light, apply dark background
-  else {
-    mode = 'dark';
-    container.setAttribute('class', 'dark');
-  }
-});
 
-const allBlogEntries =localStorage.getItem('entry');
-const javascriptBlogEntries = JSON.parse(allBlogEntries);
+}
+
+renderEntry();
