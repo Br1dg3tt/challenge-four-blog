@@ -18,11 +18,13 @@ function renderEntry () {
 
     const newEntry = JSON.parse(localStorage.getItem('entry'));
 }
+const submitForm =document.querySelector('#form');
 
-submitButton.addEventListener('click', function (event) {
+submitForm.addEventListener('submit', function (event) {
     event.preventDefault();
     saveEntry ();
     renderEntry();
+    window.location.href ='blog.html';
 });
 
     function init () {
