@@ -14,8 +14,14 @@ function renderEntry() {
     const entryUsername = document.createElement('section')
 
     entryHeading.textContent = entry.title;
+    entryHeading.innerHTML +=`<br> ${entry.userName}`;
+    //entryHeading.textContent += entry.userName;
+    entryHeading.innerHTML +=`<br> ${entry.content}`;
+    //entryHeading.textContent += entry.content;
+   // entryHeading.textContent = entry.content;
+    
     // Add the text for the username and content elements
-    entryUsername.textContent = entry.username;
+   //  entryUsername.textContent = entry.username;
    
 
     entryDiv.append(entryHeading);
